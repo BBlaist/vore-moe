@@ -11,11 +11,11 @@ export default function Main() {
         fill={true}
       />
       <div className="absolute w-full h-full">
-      <div className="flex justify-around align-center text-white">
+      <div className="flex justify-around align-center h-full text-white">
         <div>content-left</div>
         <div>content-right</div>
       </div>
-      <div className="text-white ">
+      <div className="text-white w-full">
         <a href="#">ABOUT</a> <a href="#">OUR WORK</a> <a href="#">CONTACT</a>
       </div>
       </div>

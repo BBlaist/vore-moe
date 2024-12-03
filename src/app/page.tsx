@@ -1,12 +1,13 @@
 import Image from "next/image";
+import React from 'react'
+import Main from './main'
 
 export default function Home() {
   return (
     <div>
       {/*Main*/}
-      <div className="h-screen bg-black">
-        
-      </div>
+      <Main />
+      
     </div>
   );
 }

@@ -1,21 +1,34 @@
 import Image from "next/image";
 import React from "react";
-import Background from "/public/place_back.jpeg";
-import Logo from "/public/VoreM.png";
+import Background from "/public/home-bg.png";
+import Logo from "/public/home-skull.png";
+import HomeLogo from "/public/home_logo.png";
 
 export default function Main() {
   return (
     <div className="h-screen relative">
-      <div className="absolute w-full h-full bg-filtered"></div>
-      <div className="absolute w-full h-full flex items-center justify-between px-4">
-        <div className="text-white w-full flex">
-          <div className="ml-4 md:ml-4 lg:ml-80">
+    <Image
+      src={Background}
+      alt="Background"
+      fill={true}
+    />
+      <div className="absolute w-full h-full flex items-center px-4">
+        <div className="text-white w-full flex justify-evenly">
+          <div className="relative">
             <Image 
             src={Logo} 
             alt="Logo" 
-            className = "w-3/6 h-auto md:w-4/6 lg:w-full"
+            width={400}
+            height={400} 
             />
-          </div>
+            <Image
+            src={HomeLogo}
+            alt="Logo"
+            className="absolute inset-0 w-full h-auto"
+            />
+
+            
+            </div>
           <div></div>
         </div>
         <div className="text-white w-full absolute inset-x-0 bottom-0 flex justify-center gap-10">

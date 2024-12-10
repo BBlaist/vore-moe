@@ -13,9 +13,9 @@ export default function Main() {
       alt="Background"
       fill={true}
     />
-      <div className="absolute w-full h-full flex items-center px-4">
-        <div className="text-white w-full flex justify-evenly">
-          <div className="relative">
+      <div className="absolute w-full h-full flex items-center">
+        <div className="relative text-white w-full flex justify-around">
+          <div className="">
             <Image 
             src={Logo} 
             alt="Logo" 
@@ -25,10 +25,9 @@ export default function Main() {
             <Image
             src={HomeLogo}
             alt="Logo"
-            width={450}
-            height={450}
-            className="absolute bottom-64 h-auto"
-            
+            width={512}
+            height={512}
+            className="absolute bottom-64"
             />
             <div className="w-full flex justify-center">
               <div className="absolute bottom-[17rem] font-bold text-slate-300 text-[15px] [word-spacing:8px] tracking-wide">CABLES TO BRING YOUR BUILD'S <br></br> AESTHETICS TO THE NEXT LEVEL.</div>
@@ -43,7 +42,6 @@ export default function Main() {
                 </a>
               </div>
             </div>
-            
             </div>
           <div></div>
         </div>

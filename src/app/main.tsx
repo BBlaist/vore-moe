@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import { Oxygen } from "next/font/google";
 import Background from "/public/home-bg.png";
 import Logo from "/public/home-skull.png";
 import HomeLogo from "/public/home_logo.png";
@@ -18,15 +19,19 @@ export default function Main() {
             <Image 
             src={Logo} 
             alt="Logo" 
-            width={400}
-            height={400} 
+            width={450}
+            height={450} 
             />
             <Image
             src={HomeLogo}
             alt="Logo"
-            className="absolute inset-0 w-full h-auto"
+            width={500}
+            height={500}
+            className="absolute bottom-48 w-full h-auto"
             />
-
+            <div className="w-full flex justify-center">
+              <div className="absolute bottom-44 w-1/2 ">Cables to bring your build's Aesthetics to the next level.</div>
+            </div>
             
             </div>
           <div></div>
